@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
+/* Setting default values for all elements to ensure a consistent styling across the webpage */
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +12,7 @@
     font-family: 'Lato', sans-serif;
 }
 
+/* Defining CSS variables for colors to maintain a consistent color scheme and make it easier to update the colors in the future */
 :root {
     --background-color: #f7e4ce;
     --secondary-background-color: #ffe2b7;
@@ -18,16 +20,19 @@
     --primary-color: #41c6ff;
 }
 
+/* Setting the base font size to 62.5% to simplify the use of rem units for responsive design, and hiding horizontal overflow to prevent unwanted scrollbars */
 html {
     font-size: 62.5%;
     overflow-x: hidden;
 }
 
+/* Coloring the body of the webpage */
 body {
     background-color: var(--background-color);
     color: var(--text-color);
 }
 
+/* Defining a fixed header at the top of the page, with a background color, padding, and flexbox layout for the logo and navigation links */
 .header {
     position: fixed;
     top: 0;
@@ -40,3 +45,27 @@ body {
     align-items: center;
     z-index: 100;
 } 
+
+/* Styling logo with larger font size and no cursor change on hover */
+.logo {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+    cursor: default;
+}
+
+/* Styling links in the navigation bar, setting transition time for effect on hover */
+.navbar a {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-left: 10rem;
+    transition: 0.2s;
+}
+
+/* Adding changed color on hover and active class for links in navigation bar */
+.navbar a:hover,
+.navbar a.active {
+    color: var(--primary-color);
+}
+
+ 
