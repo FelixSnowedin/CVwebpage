@@ -215,3 +215,96 @@ span {
     color: var(--text-color);
     margin: 2rem 0 2.5rem;
 }
+
+
+/* Setting background for class "projects" */
+.projects {
+    background-color: var(--secondary-background-color);
+}
+
+/* Styling h2 elements in class "projects" to have margin on the bottom */
+.projects h2 {
+    margin-bottom: 3rem;
+}
+
+/* Styling class "projects-container" to be a grid with two columns, centered items and gaps between them */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Styling class "projects-box" in "projects-containers" to have relative position in flexbox layout, rounded corners and box-shadow, margin on all sides */
+.projects-container .projects-box {
+    position: relative;
+    display: flex;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--primary-color);
+    overflow: hidden;
+    margin: .5rem 1rem;
+    background-color: var(--background-color);
+}
+
+/* Styling img elements in class "projects-box" to take up full width of container, transition time for hover effect */
+.projects-box img {
+    width: 100%;
+    transition: 0.5s ease;
+}
+
+/* Adding hover effect to img elements in class "projects-box" to slightly zoom in */
+.projects-box img:hover {
+    transform: scale(1.1);
+}
+
+/* Styling class "projects-layer" in "projects-box" in absolute position over the image, background gradient, content centered, transition time for hover effect */
+.projects-box .projects-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), var(--primary-color));
+    padding: 0 3rem;
+    transform: translateY(100%);
+    transition: 0.3s ease;
+}
+
+/* Adding hover effect to class "projects-layer" in "projects-box" to slide up the layer and reveal the content */
+.projects-box:hover .projects-layer {
+    transform: translateY(0);
+}
+
+/* Styling h4 elements in class "projects-layer" with adapted text properties */
+.projects-layer h4 {
+    font-size: 3rem;
+    color: var(--background-color);
+}
+
+/* Styling p elements in class "projects-layer" with adapted text properties and margin on top and bottom */
+.projects-layer p {
+    font-size: 1.5rem;
+    color: var(--background-color);
+    margin: 1rem 0 2rem;
+}
+
+/* Styling a elements in class "projects-layer" to be inline-flex, centered, with background color, transition time for hover effect */
+.projects-layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: var(--background-color);
+}
+
+/* Styling i elements in a elements in class "projects-layer" to have adapted properties */
+.projects-layer a i {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
