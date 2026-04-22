@@ -32,6 +32,11 @@ body {
     color: var(--text-color);
 }
 
+section {
+    min-height: 100vh;
+    padding: 5% 9% 2rem;
+}
+
 /* Defining a fixed header at the top of the page, with a background color, padding, and flexbox layout for the logo and navigation links */
 .header {
     position: fixed;
@@ -94,6 +99,15 @@ body {
     color: var(--text-color);
 }
 
+
+.home-content h3:last-of-type {
+    margin-bottom: 2rem;
+}
+
+span {
+    color: var(--primary-color);
+}
+
 /* Styling h1 elements in the home section with larger font size, bold weight, and text color */
 .home-content h1 {
     font-size: 5rem;
@@ -121,7 +135,7 @@ body {
     border-radius: 50%;
     font-size: 2rem;
     color: var(--primary-color);
-    margin: 3rem 1.5rem 3rem 0;
+    margin: 2rem 1.5rem 2rem 0;
     transition: 0.3s ease;
 }
 
@@ -130,4 +144,23 @@ body {
     background: var(--primary-color);
     color: #fff;
     box-shadow: 0 0 1rem var(--primary-color);
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 1.2rem 1.6rem;
+    background: var(--primary-color);
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--primary-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--secondary-background-color);
+    letter-spacing: .1rem;
+    transition: 0.3s ease;
+} 
+
+/* Adding hover effect to the button in the home section */
+.btn:hover {
+    box-shadow: none;
 }
