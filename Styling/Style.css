@@ -90,6 +90,7 @@ section {
 /* Styling the home image to be responsive and take up 35% of the viewport width */
 .home-img img {
     width: 35vw;
+    border-radius: 15%;
 }
 
 /* Styling h3 elements in the home section with larger font size, medium weight, and text color */
@@ -175,6 +176,7 @@ span {
 
 .about-img img {
     width: 35vw;
+    border-radius: 50%
 }
 
 .heading {
