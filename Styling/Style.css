@@ -68,8 +68,66 @@ body {
     color: var(--primary-color);
 }
 
+/* Styling the menu icon for mobile view and hiding it by default */
 #menu-icon {
     font-size: 2.5rem;
     color: var(--text-color);
     display: none;
+}
+
+/* Styling the home section to center its content both horizontally and vertically using flexbox */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling the home image to be responsive and take up 35% of the viewport width */
+.home-img img {
+    width: 35vw;
+}
+
+/* Styling h3 elements in the home section with larger font size, medium weight, and text color */
+.home-content h3 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+/* Styling h1 elements in the home section with larger font size, bold weight, and text color */
+.home-content h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--text-color);
+}
+
+/* Styling p elements in the home section with larger font size, text color, and margin on top */
+.home-content p {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-top: 1rem;
+}
+
+/* Styling the social media icons in the home section with  */
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid var(--primary-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+}
+
+/* Adding hover effect to social media icons in the home section */
+.social-media a:hover {
+    background: var(--primary-color);
+    color: #fff;
+    box-shadow: 0 0 1rem var(--primary-color);
 }
