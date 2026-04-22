@@ -32,6 +32,7 @@ body {
     color: var(--text-color);
 }
 
+/* Setting a minimum height for sections to ensure they take up the full viewport height, padding for spacing */
 section {
     min-height: 100vh;
     padding: 5% 9% 2rem;
@@ -51,7 +52,7 @@ section {
     z-index: 100;
 } 
 
-/* Styling logo with larger font size and no cursor change on hover */
+/* Styling logo with adapted text properties and no cursor change on hover */
 .logo {
     font-size: 2.5rem;
     font-weight: 600;
@@ -59,7 +60,7 @@ section {
     cursor: default;
 }
 
-/* Styling links in the navigation bar, setting transition time for effect on hover */
+/* Styling links in the navigation bar, transition time for effect on hover */
 .navbar a {
     font-size: 1.8rem;
     color: var(--text-color);
@@ -67,7 +68,7 @@ section {
     transition: 0.2s;
 }
 
-/* Adding changed color on hover and active class for links in navigation bar */
+/* Adding changed color on hover and class "active" for links in navigation bar */
 .navbar a:hover,
 .navbar a.active {
     color: var(--primary-color);
@@ -87,29 +88,30 @@ section {
     align-items: center;
 }
 
-/* Styling the home image to be responsive and take up 35% of the viewport width */
+/* Styling the home image to take up 35% of the viewport width, rounded edges */
 .home-img img {
     width: 35vw;
     border-radius: 15%;
 }
 
-/* Styling h3 elements in the home section with larger font size, medium weight, and text color */
+/* Styling h3 elements in the home section with adapted text properties */
 .home-content h3 {
     font-size: 3.5rem;
     font-weight: 600;
     color: var(--text-color);
 }
 
-
+/* Adding margin on the bottom of the last h3 element in class "home-content" */
 .home-content h3:last-of-type {
     margin-bottom: 2rem;
 }
 
+/* Styling span elements to have the primary color */
 span {
     color: var(--primary-color);
 }
 
-/* Styling h1 elements in the home section with larger font size, bold weight, and text color */
+/* Styling h1 elements in the home section with adapted text properties */
 .home-content h1 {
     font-size: 5rem;
     font-weight: 700;
@@ -117,14 +119,14 @@ span {
     color: var(--text-color);
 }
 
-/* Styling p elements in the home section with larger font size, text color, and margin on top */
+/* Styling p elements in the home section with adapted text properties, and margin on top */
 .home-content p {
     font-size: 1.8rem;
     color: var(--text-color);
     margin-top: 1rem;
 }
 
-/* Styling the social media icons in the home section with  */
+/* Styling the social media icons in the home section to be displayed responsively, have rounded colored borders, transition time for hover effect */
 .social-media a {
     display: inline-flex;
     justify-content: center;
@@ -147,7 +149,7 @@ span {
     box-shadow: 0 0 1rem var(--primary-color);
 }
 
-
+/* Styling elements of class btn to be inline-block, have padded rounded border with box-shadow, transition time for hover effect*/
 .btn {
     display: inline-block;
     padding: 1.2rem 1.6rem;
@@ -166,6 +168,7 @@ span {
     box-shadow: none;
 }
 
+/* Styling the about section to center its content both horizontally and vertically using flexbox */
 .about {
     display: flex;
     justify-content: center;
@@ -174,31 +177,39 @@ span {
     background-color: var(--secondary-background-color);
 }
 
+/* Styling the about image to take up 35% of the viewport width, in a circular shape */
 .about-img img {
     width: 35vw;
     border-radius: 50%
 }
 
+/* Styling elements of class heading to have centered, adapted text*/
 .heading {
     text-align: center;
     font-size: 4.5rem;
     font-weight: 600;
     color: var(--text-color);
 }
+
+/* Styling the content of section "about" with margin on all sides */
 .about-content {
     margin: 2rem 2rem;
 }
+
+/* Styling h2 elements in class "about-content" to have left-aligned text and line height for better readability */
 .about-content h2 {
     text-align: left;
     line-height: 1.4;
 } 
 
+/* Styling h3 elements in class "about-content" with adapted text properties */
 .about-content h3 {
     font-size: 2rem;
     font-weight: 600;
     color: var(--text-color);
 }
 
+/* Styling p elements in class "about-content" with adapted text properties and margin on top and bottom */
 .about-content p {
     font-size: 1.5rem;
     color: var(--text-color);
