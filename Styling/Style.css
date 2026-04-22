@@ -164,3 +164,41 @@ span {
 .btn:hover {
     box-shadow: none;
 }
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--secondary-background-color);
+}
+
+.about-img img {
+    width: 35vw;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+.about-content {
+    margin: 2rem 2rem;
+}
+.about-content h2 {
+    text-align: left;
+    line-height: 1.4;
+} 
+
+.about-content h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.about-content p {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin: 2rem 0 2.5rem;
+}
