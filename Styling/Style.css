@@ -38,6 +38,8 @@ section {
     padding: 5% 9% 2rem;
 }
 
+/* ------------------------------ Header styling ----------------------------- */
+
 /* Defining a fixed header at the top of the page, with a background color, padding, and flexbox layout for the logo and navigation links */
 .header {
     position: fixed;
@@ -80,6 +82,8 @@ section {
     color: var(--text-color);
     display: none;
 }
+
+/* ----------------------------- Home section styling ----------------------------- */
 
 /* Styling the home section to center its content both horizontally and vertically using flexbox */
 .home {
@@ -163,6 +167,7 @@ span {
     font-weight: 600;
     color: var(--secondary-background-color);
     letter-spacing: .1rem;
+    cursor: pointer;
     transition: 0.3s ease;
 } 
 
@@ -170,6 +175,8 @@ span {
 .btn:hover {
     box-shadow: none;
 }
+
+/* ----------------------------- About section styling ----------------------------- */
 
 /* Styling the about section to center its content both horizontally and vertically using flexbox */
 .about {
@@ -218,11 +225,11 @@ span {
     color: var(--text-color);
     margin: 2rem 0 2.5rem;
 }
-
+/* ----------------------------- Projects section styling ------------------ ----------- */
 
 /* Setting background for class "projects" */
 .projects {
-    background-color: var(--secondary-background-color);
+    background-color: var(--background-color);
 }
 
 /* Styling h2 elements in class "projects" to have margin on the bottom */
@@ -246,7 +253,7 @@ span {
     box-shadow: 0 0 1rem var(--primary-color);
     overflow: hidden;
     margin: .5rem 1rem;
-    background-color: var(--background-color);
+    background-color: whitesmoke;
 }
 
 /* Styling img elements in class "projects-box" to take up full width of container, transition time for hover effect */
@@ -311,3 +318,65 @@ span {
     font-size: 2rem;
     color: var(--primary-color);
 }
+
+/* -------------------------------- Contact section styling ----------------------------- */
+
+/* Setting background for class "contact" */
+.contact {
+    background-color: var(--secondary-background-color);
+}
+
+/* Styling h2 elements in class "contact" to have margin on the bottom */
+.contact h2 {
+    margin-bottom: 2rem;
+}
+
+/* Styling form elements in class "contact" to have a maximum width, be centered with margin and align text to center */
+.contact form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+/* Styling class "input-box" in class "contact" to be a flex container with space between items and wrapping for smaller screens */
+.contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Styling input and textarea elements in class "contact" to be full width in container, adapted text properties, color, rounded borders, margin */
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    background-color: whitesmoke;
+    border: .2rem solid var(--primary-color);
+    border-radius: 1rem;
+    margin: .5rem 0;
+
+}
+
+/* Styling input elements in class "contact" to take up 49% of the width, allows two inputs to be displayed side by side */
+.contact form .input-box input {
+    width: 49%;
+}
+
+/* Styling textarea elements in class "contact" to have a fixed height and prevent resizing, margin on the bottom */
+.contact form textarea {
+    resize: none;
+     height: 20rem; 
+    margin-bottom: 1.5rem;
+}
+
+/* Adding focus effect to input and textarea elements in class "contact" to change border color and add box-shadow */
+.contact form .input-box input:focus,
+.contact form textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 1rem var(--primary-color);
+}
+
+
+
