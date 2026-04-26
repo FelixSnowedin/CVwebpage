@@ -99,6 +99,7 @@ section {
     font-size: 3.5rem;
     font-weight: 600;
     color: var(--text-color);
+    cursor: default;
 }
 
 /* Adding margin on the bottom of the last h3 element in class "home-content" */
@@ -117,6 +118,7 @@ span {
     font-weight: 700;
     line-height: 1.3;
     color: var(--text-color);
+    cursor: default;
 }
 
 /* Styling p elements in the home section with adapted text properties, and margin on top */
@@ -124,6 +126,7 @@ span {
     font-size: 1.8rem;
     color: var(--text-color);
     margin-top: 1rem;
+    cursor: default;
 }
 
 /* Styling the social media icons in the home section to be displayed responsively, have rounded colored borders, transition time for hover effect */
