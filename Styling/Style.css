@@ -151,6 +151,7 @@ span {
 
 /* Adding hover effect to social media icons in the home section */
 .social-media a:hover {
+    transform: scale(1.1);
     background: var(--primary-color);
     color: #fff;
     box-shadow: 0 0 1rem var(--primary-color);
@@ -173,6 +174,7 @@ span {
 
 /* Adding hover effect to the button in the home section */
 .btn:hover {
+    transform: scale(1.1);
     box-shadow: none;
 }
 
