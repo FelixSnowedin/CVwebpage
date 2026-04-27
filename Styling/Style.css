@@ -40,9 +40,9 @@ section {
 
 /* ------------------------------ Header styling ----------------------------- */
 
-/* Defining a fixed header at the top of the page, with a background color, padding, and flexbox layout for the logo and navigation links */
+/* Defining a header at the top of the page, with a background color, padding, and flexbox layout for the logo and navigation links */
 .header {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
