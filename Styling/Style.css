@@ -52,7 +52,7 @@ section {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-} 
+}
 
 /* Styling logo with adapted text properties and no cursor change on hover */
 .logo {
@@ -169,7 +169,7 @@ span {
     letter-spacing: .1rem;
     cursor: pointer;
     transition: 0.3s ease;
-} 
+}
 
 /* Adding hover effect to the button in the home section */
 .btn:hover {
@@ -210,7 +210,7 @@ span {
 .about-content h2 {
     text-align: left;
     line-height: 1.4;
-} 
+}
 
 /* Styling h3 elements in class "about-content" with adapted text properties */
 .about-content h3 {
@@ -367,7 +367,7 @@ span {
 /* Styling textarea elements in class "contact" to have a fixed height and prevent resizing, margin on the bottom */
 .contact form textarea {
     resize: none;
-     height: 20rem; 
+     height: 20rem;
     margin-bottom: 1.5rem;
 }
 
@@ -378,5 +378,60 @@ span {
     box-shadow: 0 0 1rem var(--primary-color);
 }
 
+/* ------------------------------ Footer styling ----------------------------- */
 
+/* Styling class "footer" as flex container with evenly spaced and centered children, wrapping, background color, margin on left and right */
+.footer {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--background-color);
+    text-align: center;
+    margin: 0 2rem;
+}
 
+/* Styling class "footer-content" in class "footer" with absolute position, adapted text properties */
+.footer .footer-content {
+    position: absolute;
+    left: 2rem;
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+/* Styling class "footer-up" in class "footer" with absolute position */
+.footer .footer-up {
+    position: absolute;
+    right: 2rem;
+}
+
+/* Styling a elements in class "footer-icon" and "footer-up" in class "footer" to be inline-flex, centered, with background color, transition time for hover effect */
+.footer .footer-icon a,
+.footer .footer-up a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: var(--primary-color);
+    color: var(--background-color);
+    border: .2rem solid var(--primary-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    margin: 2rem 1.5rem 2rem 0;
+    transition: 0.3s ease;
+}
+
+/* Styling a elements in class "footer-up" in class "footer" to have adapted text size, less rounded borders and no margin */
+.footer .footer-up a {
+    font-size: 2.5rem;
+    margin: none;
+    border-radius: .5rem;
+}
+
+/* Adding hover effect to a elements in class "footer-icon" and "footer-up" in class "footer" to slightly zoom in and add box-shadow */
+.footer .footer-icon a:hover,
+.footer .footer-up a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 1rem var(--primary-color);
+}
