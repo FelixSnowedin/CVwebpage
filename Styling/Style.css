@@ -22,7 +22,7 @@
 
 /* Setting the base font size to 62.5% to simplify the use of rem units for responsive design, and hiding horizontal overflow to prevent unwanted scrollbars */
 html {
-    font-size: 62.5%;
+    font-size: 65%;
     overflow-x: hidden;
 }
 
@@ -221,6 +221,7 @@ span {
 .about-content h2 {
     text-align: left;
     line-height: 1.4;
+    margin-bottom: 2rem;
 }
 
 /* Styling h3 elements in class "about-content" with adapted text properties */
@@ -449,9 +450,30 @@ span {
 
 /* ------------------------------ Responsive styling for different screens ----------------------------- */
 
-@media (min-width:1372px) {
 
+
+@media (min-width:1372px) {
     html {
-        font-size: 70%;
+        font-size: 70%; 
     }
 }
+
+@media (max-width:1124px) {
+    html {
+        font-size: 60%; 
+    }
+}
+
+@media (max-width: 1035px) {
+    html {
+        font-size: 55%; 
+    }
+    section {
+        padding: 8rem 5% 3rem;
+    }
+    .header {
+        padding: 2rem 6%;
+    }
+
+}
+
