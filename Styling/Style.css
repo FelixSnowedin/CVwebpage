@@ -98,6 +98,9 @@ section {
     align-items: center;
 }
 
+.home .home-content {
+    margin: 2rem;
+}
 /* Styling the home image to take up 35% of the viewport width, rounded edges */
 .home-img img {
     width: 35vw;
@@ -222,14 +225,14 @@ span {
 
 /* Styling h3 elements in class "about-content" with adapted text properties */
 .about-content h3 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 600;
     color: var(--text-color);
 }
 
 /* Styling p elements in class "about-content" with adapted text properties and margin on top and bottom */
 .about-content p {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: var(--text-color);
     margin: 2rem 0 2.5rem;
 }
@@ -444,3 +447,11 @@ span {
     box-shadow: 0 0 1rem var(--primary-color);
 }
 
+/* ------------------------------ Responsive styling for different screens ----------------------------- */
+
+@media (min-width:1372px) {
+
+    html {
+        font-size: 70%;
+    }
+}
