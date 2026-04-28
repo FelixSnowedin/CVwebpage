@@ -42,7 +42,8 @@ section {
 
 /* Defining a header at the top of the page, with a background color, padding, and flexbox layout for the logo and navigation links */
 .header {
-    position: absolute;
+    /* position: absolute; */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
