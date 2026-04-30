@@ -25,6 +25,13 @@ window.onscroll = () => {
             });
         };
     });
+
+/* Toggling sticky class on header when scrolling down the page to add a sticky effect */    
     let header = document.querySelector('header');
     header.classList.toggle('sticky', window.scrollY > 100);
+
+/* Removing class "bx-x" from #menu-icon and class "active" from class "navbar" when clicking on a navigation link or scrolling */
+    menuIcon.classList.remove('bx-x');
+    navbar.classList.remove('active');
+
 };
