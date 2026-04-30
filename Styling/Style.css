@@ -235,6 +235,8 @@ span {
     font-size: 1.8rem;
     color: var(--text-color);
     margin: 2rem 0 2.5rem;
+    text-align: justify;
+    text-justify: inter-word;
 }
 /* ----------------------------- Projects section styling ------------------ ----------- */
 
@@ -507,8 +509,64 @@ span {
     }
 }
 
-/* @media (max-width:769px) {
-    html {
-        font-size: 70%; 
+@media (max-width:800px) {
+    .home {
+        flex-direction: column; 
+        padding-bottom: 0;
     }
-} */
+
+    .home-content {
+        margin: 2rem;
+        text-align: center;
+    }
+
+    .home-img img {
+        width: 55vw;
+        height: auto;
+        margin-top: 4rem;
+    }
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+        background-color: var(--background-color);
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        min-height: auto;  
+        scroll-margin-top: 5rem;
+    }
+
+    .about-content {
+        margin: 2rem;
+        background-color: var(--background-color);
+    }
+
+    .about-img img {
+        display: none;
+    }
+
+    .about-content h2 {
+        position: relative;
+        top: 0;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .about-content p {
+        text-align: justify;
+        text-justify: inter-word;
+        text-align-last: center;
+    }
+
+    .projects {
+        background-color: var(--secondary-background-color);
+    }
+
+    .contact {
+        background-color: var(--background-color);
+    }
+
+    footer {
+        border-top: .1rem solid rgba(0, 0, 0, 0.1);
+    }
+}
