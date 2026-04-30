@@ -34,7 +34,7 @@ body {
 
 /* Setting a minimum height for sections to ensure they take up the full viewport height, padding for spacing */
 section {
-    min-height: 100vh;
+    min-height: 100dvh;
     padding: 5% 9% 2rem;
 }
 
@@ -194,7 +194,6 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
     background-color: var(--secondary-background-color);
 }
 
@@ -214,7 +213,7 @@ span {
 
 /* Styling the content of section "about" with margin on all sides */
 .about-content {
-    margin: 2rem 2rem;
+    margin: 2rem 5rem;
 }
 
 /* Styling h2 elements in class "about-content" to have left-aligned text and line height for better readability */
@@ -478,6 +477,10 @@ span {
 }
 
 @media (max-width: 884px) {
+    html {
+        font-size: 50%; 
+    }
+
     #menu-icon {
         display: block;
     }
@@ -503,3 +506,9 @@ span {
         margin: 2.2rem 0;
     }
 }
+
+/* @media (max-width:769px) {
+    html {
+        font-size: 70%; 
+    }
+} */
