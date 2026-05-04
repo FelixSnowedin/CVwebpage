@@ -35,3 +35,26 @@ window.onscroll = () => {
     navbar.classList.remove('active');
 
 };
+
+/* Scroll reveal animation for elements with class "home-content" and "heading" */
+ScrollReveal({
+    reset: true,
+    distance: '80px',
+    duration: 1500,
+    delay: 100
+});
+
+ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
+ScrollReveal().reveal('.home-img, .projects-box, .contact form', { origin: 'bottom' });
+ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
+ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
+
+/* TypedJS animation for the text in the home section */
+
+const typed = new Typed('.multiple-text', {
+    strings: ['Software Developer', 'Data Scientist', 'AI Enthusiast'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop: true
+});
