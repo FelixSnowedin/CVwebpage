@@ -570,3 +570,33 @@ span {
         border-top: .1rem solid rgba(0, 0, 0, 0.1);
     }
 }
+
+@media (max-width: 580px) {
+    html {
+        font-size: 48%; 
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .contact form .input-box input {
+        width: 100%;
+    }
+
+    .footer .footer-icon {
+        display: none;
+    }
+
+    .footer .footer-content {
+        position: static;
+        margin: 1rem 0;
+    }
+
+    .footer .footer-up {
+        position: static;
+    }
+
+}
